@@ -1,6 +1,6 @@
-FROM alpine
+FROM ubuntu
 
 MAINTAINER Jan Papenbrock <j.papenbrock@hochzehn.com>
 
-RUN apk update \
- && apk add curl python git
+RUN apt-get update \
+ && apt-get install -y curl python git
